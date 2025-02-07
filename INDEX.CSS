@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+
+body {
+    font-family: 'Joti One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('/img/LOGO.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menú desplegable */
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Mueve el menú a la derecha */
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #00ffcc;
+    transition: 0.3s;
+}
+
+.menu-icon:hover {
+    color: #ff00ff;
+}
+
+.menu-content {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 180px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s;
+    display: none; /* Oculto por defecto */
+}
+
+.menu-content a {
+    display: block;
+    color: #00ffcc;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-content a:hover {
+    background: rgba(0, 255, 204, 0.3);
+}
+
+/* Clase para mostrar el menú */
+.show-menu {
+    display: block;
+}
+
+/* Barra de búsqueda */
+/* Contenedor de la barra de búsqueda */
+/* Contenedor de la barra de búsqueda */
+.busqueda-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la barra */
+    width: 80%;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+/* Texto de bienvenida alineado a la izquierda */
+.bienvenida {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ffcc;
+    align-self: flex-start; /* Lo coloca a la izquierda */
+    margin-bottom: 10px;
+}
+
+/* Contenedor de la barra de búsqueda */
+.busqueda {
+    position: relative;
+    width: 100%;
+}
+
+/* Barra de búsqueda */
+.barra-busqueda {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: #1e1e1e;
+    color: #00ffcc;
+    box-shadow: 0px 0px 10px #00ffcc;
+}
+
+/* Ícono de la lupa */
+.lupa {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00ffcc;
+    font-size: 18px;
+}
+
+
+/* Sección de categorías y artistas */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    width: 90%;
+}
+a{
+    text-decoration: none;
+}
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    color: #00ffcc;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Línea divisoria */
+.separator {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid #00ffcc;
+    margin: 40px 0;
+}
+
+/* Estilo de cada categoría */
+.categoria {
+    display: flex;
+    width: 500px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.6);
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen a la izquierda */
+.imagen {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Información a la derecha */
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    background: linear-gradient(to right, rgba(0, 255, 204, 0.3), transparent);
+}
+
+h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #00ffcc;
+}
+
+p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+/* Pie de página */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px #00ffcc;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* Redes sociales en el footer */
+.redes {
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.redes i {
+    font-size: 24px;
+    color: #00ffcc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.redes i:hover {
+    color: #ff00ff;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .categoria {
+        width: 90%;
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .info {
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .redes {
+        margin-top: 10px;
+    }
+}

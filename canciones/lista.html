@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Canciones</title>
+    <link rel="stylesheet" href="lista.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú y Barra de búsqueda -->
+    <div class="header">
+        <div class="menu">
+            <i class="fas fa-bars menu-icon"></i> <!-- Ícono del menú -->
+            <nav class="menu-content">
+                <a href="/INDEX.HTML">Inicio</a>
+                <a href="#">Cerrar sesión</a>
+            </nav>
+        </div>
+        <div class="busqueda-container">
+            <input type="text" placeholder="Buscar canciones..." class="barra-busqueda">
+            <i class="fas fa-search lupa"></i>
+        </div>
+    </div>
+
+    <!-- Lista de Canciones -->
+    <main>
+        <h2 class="section-title">Canciones de [Categoría/Artista]</h2>
+
+        <div class="cancion">
+            <div class="imagen-cancion" style="background-image: url('/img/bob.jpg');"></div>
+            <div class="info-cancion">
+                <h3>Canción 1</h3>
+                <p>Artista - Álbum</p>
+            </div>
+        </div>
+
+        <div class="cancion">
+            <div class="imagen-cancion" style="background-image: url('/img/kendri.jpg');"></div>
+            <div class="info-cancion">
+                <h3>Canción 2</h3>
+                <p>Artista - Álbum</p>
+            </div>
+        </div>
+
+        <div class="cancion">
+            <div class="imagen-cancion" style="background-image: url('/img/cancion3.jpg');"></div>
+            <div class="info-cancion">
+                <h3>Canción 3</h3>
+                <p>Artista - Álbum</p>
+            </div>
+        </div>
+        <div class="cancion">
+            <div class="imagen-cancion" style="background-image: url('/img/cancion1.jpg');"></div>
+            <div class="info-cancion">
+                <h3>Canción 1</h3>
+                <p>Artista - Álbum</p>
+            </div>
+        </div>
+
+        <div class="cancion">
+            <div class="imagen-cancion" style="background-image: url('/img/cancion2.jpg');"></div>
+            <div class="info-cancion">
+                <h3>Canción 2</h3>
+                <p>Artista - Álbum</p>
+            </div>
+        </div>
+
+        <div class="cancion">
+            <div class="imagen-cancion" style="background-image: url('/img/cancion3.jpg');"></div>
+            <div class="info-cancion">
+                <h3>Canción 3</h3>
+                <p>Artista - Álbum</p>
+            </div>
+        </div>
+
+        <!-- Más canciones aquí -->
+    </main>
+
+    <!-- Script para mostrar/ocultar el menú -->
+    <script>
+        document.querySelector(".menu-icon").addEventListener("click", function() {
+            document.querySelector(".menu-content").classList.toggle("show-menu");
+        });
+    </script>
+
+</body>
+</html>

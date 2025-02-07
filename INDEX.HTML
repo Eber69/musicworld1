@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music World</title>
+    <link rel="stylesheet" href="INDEX.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú desplegable -->
+    <div class="menu">
+        <i class="fas fa-bars menu-icon"></i> <!-- Ícono del menú -->
+        <nav class="menu-content">
+            <a href="#"></a>
+            <a href="#">Favoritos</a>
+            <a href="/micuenta/micuenta.html">Mi cuenta</a>
+            <a href="#">Cerrar sesión</a>
+        </nav>
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="busqueda-container">
+        <span class="bienvenida">Bienvenido Eber</span>
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar canciones..." class="barra-busqueda">
+            <i class="fas fa-search lupa"></i>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="categorias">
+            <h2 class="section-title">Categorías</h2> <!-- Título Categorías -->
+            
+            <!-- Cada categoría envuelta en un enlace -->
+            <a href="/rock.html" class="categoria">
+                <div class="imagen" style="background-image: url('/img/rock.jpg');"></div>
+                <div class="info">
+                    <h2>Rock</h2>
+                    <p>Explora los mejores éxitos del rock clásico y moderno.</p>
+                </div>
+            </a>
+
+            <a href="/pop.html" class="categoria">
+                <div class="imagen" style="background-image: url('/img/pop.jpg');"></div>
+                <div class="info">
+                    <h2>Pop</h2>
+                    <p>Los hits más populares y actuales del género pop.</p>
+                </div>
+            </a>
+
+            <a href="/jazz.html" class="categoria">
+                <div class="imagen" style="background-image: url('/img/jaz.jpg');"></div>
+                <div class="info">
+                    <h2>Jazz</h2>
+                    <p>Relájate con los sonidos suaves del jazz.</p>
+                </div>
+            </a>
+
+            <a href="/rap.html" class="categoria">
+                <div class="imagen" style="background-image: url('/img/rap.webp');"></div>
+                <div class="info">
+                    <h2>Rap</h2>
+                    <p>Culturízate un poco con la poesía callejera.</p>
+                </div>
+            </a>
+
+            <a href="/reggae.html" class="categoria">
+                <div class="imagen" style="background-image: url('/img/rage.jpg');"></div>
+                <div class="info">
+                    <h2>Reggae</h2>
+                    <p>Relájate un momento hermanito.</p>
+                </div>
+            </a>
+
+            <a href="/cumbia.html" class="categoria">
+                <div class="imagen" style="background-image: url('cumbia.jpg');"></div>
+                <div class="info">
+                    <h2>Cumbia</h2>
+                    <p>Un buen momento o una buena compañía.</p>
+                </div>
+            </a>
+
+        </section>
+
+        <!-- Línea divisoria entre Categorías y Artistas -->
+        <hr class="separator">
+
+        <section class="categorias artistas">
+            <h2 class="section-title">Artistas</h2> <!-- Título Artistas -->
+            
+            <!-- Cada artista envuelto en un enlace -->
+            <a href="/bob-marley.html" class="categoria">
+                <div class="imagen" style="background-image: url('/img/bob.jpg');"></div>
+                <div class="info">
+                    <h2>Bob Marley</h2>
+                    <p>Descubre al mejor artista de la temporada.</p>
+                </div>
+            </a>
+
+            <a href="/kendrick-lamar.html" class="categoria">
+                <div class="imagen" style="background-image: url('/img/kendri.jpg');"></div>
+                <div class="info">
+                    <h2>Kendrick Lamar</h2>
+                    <p>Los éxitos más grandes de este artista.</p>
+                </div>
+            </a>
+
+            <a href="/ariel-camacho.html" class="categoria">
+                <div class="imagen" style="background-image: url('/img/ariel.jpg');"></div>
+                <div class="info">
+                    <h2>Ariel Camacho</h2>
+                    <p>Una leyenda de la música moderna.</p>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="redes">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-tiktok"></i>
+        </div>
+        <p>&copy; 2025 Music World</p>
+        <p>Explora tu música sin límites</p>
+    </footer>
+
+    <!-- Script para mostrar/ocultar el menú -->
+    <script>
+        document.querySelector(".menu-icon").addEventListener("click", function() {
+            document.querySelector(".menu-content").classList.toggle("show-menu");
+        });
+    </script>
+
+</body>
+</html>

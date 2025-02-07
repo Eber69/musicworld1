@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - Music World</title>
+    <link rel="stylesheet" href="micuenta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú desplegable -->
+    <div class="menu">
+        <i class="fas fa-bars menu-icon"></i> <!-- Ícono del menú -->
+        <nav class="menu-content">
+            <a href="#">Favoritos</a>
+            <a href="#">Mi cuenta</a>
+            <a href="#">Cerrar sesión</a>
+        </nav>
+    </div>
+
+    <!-- Contenedor de la tarjeta de cuenta -->
+    <div class="account-card">
+        <div class="user-image">
+            <img src="/img/yo.jpg" alt="Avatar del usuario" class="avatar">
+        </div>
+        <div class="account-info">
+            <h2>Mi Cuenta</h2>
+            <p><strong>Correo Electrónico:</strong> usuario@correo.com</p>
+            <p><strong>Usuario:</strong> eber123</p>
+            <p><strong>Contraseña:</strong> ********</p>
+           
+            <a href="/INDEX.HTML">
+                <button class="delete-btn" >Inicio</button>
+            </a>
+            <a href="pagina-destino.html">
+                <button class="delete-btn">Borrar Cuenta</button>
+            </a>
+            
+        </div>
+    </div>
+
+   
+
+    <!-- Script para mostrar/ocultar el menú -->
+    <script>
+        document.querySelector(".menu-icon").addEventListener("click", function() {
+            document.querySelector(".menu-content").classList.toggle("show-menu");
+        });
+    </script>
+
+</body>
+</html>
